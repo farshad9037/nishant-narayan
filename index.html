@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <title>accuratevastu.com</title>
+
+    <!-- CSS Files [Start] -->
+    <link rel="icon" type="image/png" href="css/images/favicon/favicon.png">
+    <link href="js/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link  href="js/vendors/angular/angular-bootstrap-lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS Files [End] -->
+
+</head>
+
+<body ng-controller="CommonController">
+    <div ui-view="home"></div>
+    <nav id="header" class="clearfix navbar navbar-default">
+        <div class="container-fluid">
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <a class="page-title navbar-brand" href="#">
+                    <div class="logo-container">
+                        <span>accuratevastu.com</span>
+                    </div>
+                </a>
+            </div>
+            <!--<div>
+                <button type="button" style="margin-top: -40px" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>-->
+            <div class="col-md-10 col-sm-12 col-xs-12">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav">
+                        <li ng-click="gotoAnchor('home')"><a>HOME</a></li>
+                        <li ng-click="gotoAnchor('whatIsVastu')"><a>WHAT IS VASTU</a></li>
+                        <li ng-click="gotoAnchor('aboutNishant')"><a>ABOUT NISHANT</a></li>
+                        <li ng-click="gotoAnchor('whatIsAccurateVastu')"><a>WHAT IS ACCURATE VASTU</a></li>
+                        <li ng-click="gotoAnchor('consultingProcess')"><a>CONSULTING PROCESS</a></li>
+                        <li ng-click="gotoAnchor('pricing')"><a>PRICING</a></li>
+                        <li ng-click="gotoAnchor('videos')"><a>VIDEOS</a></li>
+                        <li ng-click="gotoAnchor('memberArea')"><a>MEMBERS AREA</a></li>
+                        <li ng-click="gotoAnchor('contact')"><a>CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div ui-view="whatIsVastu"></div>
+    <div ui-view="aboutNishant"></div>
+    <div ui-view="whatIsAccurateVastu"></div>
+    <div ui-view="consultingProcess"></div>
+    <div ui-view="pricing"></div>
+    <div ui-view="videos"></div>
+    <div ui-view="memberArea"></div>
+    <div ui-view="contact"></div>
+
+    <!--<footer id="footer" class="clearfix">
+        <div ui-view="footer"></div>
+    </footer>-->
+
+    <!-- JS Files [Start]-->
+    <script src="js/vendors/require/require.js" data-main="js/main.js"></script>
+    <!--<script src="vendors/bootstrap/js/bootstrap.min.js"></script>-->
+    <!-- JS Files [End]-->
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<div class="clearfix section-container" id="videos">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-6" ng-repeat="video in videos">
+            <div class="thumbs-container">
+                <div class="thumbs-image-container">
+                <embed-video data-ng-href="{{video.url}}" on-change="videoSelected(videoId, provider)" controls=0><a href="{{video.url}}">Watch</a></embed-video>
+            </div>
+        </div>
+    </div>
+</div>
